@@ -17,8 +17,12 @@
     max-width: 550px;
     background-color: #fff;
     margin: 90px auto 30px;
-    padding: 40px 50px;
+    padding: 50px 10px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .todo-app h2 {
@@ -35,8 +39,9 @@
 }
 
 .row {
+    width: 90%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     background: #d2d2d9;
     border-radius: 30px;
@@ -51,17 +56,19 @@ input {
     flex: 1;
     padding: 10px;
     font-weight: 300;
+    width: 70%;
 }
 
 button {
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 10px 10px;
     background: #2d2d56;
     border-radius: 40px;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    width: 30%;
 }
 
 ul li {
@@ -71,6 +78,7 @@ ul li {
     user-select: none;
     cursor: pointer;
     position: relative;
+    max-width: 64vw;
 }
 
 ul li::before {
@@ -83,7 +91,7 @@ ul li::before {
     background-position: center;
     background-size: cover;
     top: 10px;
-    left: 22px;
+    left: 20px;
 }
 
 ul li.checked {
@@ -112,7 +120,7 @@ ul li span:hover {
     background: #c2bdbd;
 }
 
-@media (max-width:320px) {
+/* @media (max-width:320px) {
     button {
         border: none;
         outline: none;
@@ -201,4 +209,4 @@ ul li span:hover {
         top: 0%;
         right: 0%;
     }
-}
+} */
